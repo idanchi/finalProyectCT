@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <unistd.h>
 
+int animationFinal();
 int printVendingMachine();
 int printVendingMachineMid();
 int printVendingMachineMid2();
@@ -46,6 +47,13 @@ int main()
         printf("               Su cambio sería: %.2f\n", cambio);
     }
 
+    animationFinal();
+
+    return 0;
+}
+
+int animationFinal()
+{
     sleep(1);
     screenClear();
     printVendingMachineMid();
@@ -56,8 +64,6 @@ int main()
     screenClear();
     printVendingMachineFinal();
     printf("               Bebida dispensada!\n");
-
-    return 0;
 }
 
 float selectCoin(float *monedaIngreso)
