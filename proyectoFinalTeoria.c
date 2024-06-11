@@ -25,7 +25,7 @@ int main()
     selectSoda(&soda);
     screenClear();
 
-    // Automata
+    // Automata implementado de forma básica con un do while
     float suma = 0;
     float cambio = 0;
     do
@@ -52,7 +52,7 @@ int main()
     return 0;
 }
 
-int animationFinal()
+int animationFinal() // Simplemente hace la impresión de la animación final cuando la bebida está suelta
 {
     sleep(1);
     screenClear();
@@ -66,7 +66,7 @@ int animationFinal()
     printf("               Bebida dispensada!\n");
 }
 
-float selectCoin(float *monedaIngreso)
+float selectCoin(float *monedaIngreso) // Selección de monedas
 {
     int aux;
     printf("               Ingrese una moneda:\n");
@@ -96,7 +96,7 @@ float selectCoin(float *monedaIngreso)
     return *monedaIngreso;
 }
 
-float selectSoda(float *soda)
+float selectSoda(float *soda) // Selección de soda
 {
     int aux;
     printf("               Seleccione su bebida ingresando el número:\n");
@@ -127,7 +127,7 @@ float selectSoda(float *soda)
     return *soda;
 }
 
-int pressKeyboard()
+int pressKeyboard() // Primera impresión para confirmar estar en el "juego"
 {
     printf("               Deberia comprar una bebida?:\n               Presione cualquier tecla para continuar");
     char buf[5];
@@ -135,7 +135,7 @@ int pressKeyboard()
     return 0;
 }
 
-void screenClear()
+void screenClear() // Limpieza de pantalla
 {
     printf("\033[H\033[J");
 }
