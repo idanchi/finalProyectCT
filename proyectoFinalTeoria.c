@@ -245,7 +245,7 @@ int printVendingMachineMid2()
     return 0;
 }
 
-int printVendingMachineFinal()
+int printVendingMachineFinal() // Estado final
 {
     printf("                _______________________________________\n");
     printf("               |                                       |\n");
