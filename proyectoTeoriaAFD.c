@@ -50,21 +50,21 @@ int main()
     {
         screenClear();
         printVendingMachine();
-        printf("Dinero ingresado: $%.2f\n", state_to_value(state));
-        printf("Ingrese una moneda ($0.25, $0.50, $1.00): ");
+        printf("               Dinero ingresado: $%.2f\n", state_to_value(state));
+        printf("               Ingrese una moneda ($0.25, $0.50, $1.00): ");
         scanf("%f", &input);
 
         if (input != 0.25 && input != 0.50 && input != 1.00)
         {
-            printf("Invalid input. Please insert $0.25, $0.50, or $1.00.\n");
+            printf("Por favor ingrese solamente $0.25, $0.50, or $1.00.\n");
             continue;
         }
 
         process_input(&state, input);
     }
 
-    printf("Dinero ingresado: $%.2f\n", state_to_value(state));
-    printf("Transaccion completa.\n");
+    printf("               Dinero ingresado: $%.2f\n", state_to_value(state));
+    printf("               Transaccion completa.\n");
 
     animationFinal();
 
