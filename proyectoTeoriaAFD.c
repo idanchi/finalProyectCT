@@ -208,7 +208,7 @@ void process_input(State *state, float input)
     case STATE_425:
     case STATE_450:
     case STATE_475:
-        printf("Product dispensed\n");
+        printf("Product dispensado\n");
         break;
     }
 }
